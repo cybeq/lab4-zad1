@@ -18,14 +18,6 @@ app.use(PrimeVue);
 app.component('InputNumber', {
     extends: InputNumber,
     props: {
-        maxFractionDigits: {
-            type: Number,
-            default: 2
-        },
-        minFractionDigits: {
-            type: Number,
-            default: 2
-        },
         locale: {
             type: String,
             default: 'pl-PL'

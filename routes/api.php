@@ -18,3 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('/validate',  [UserController::class, 'validateUser']);
+Route::post('/shoot',  [\App\Http\Controllers\GameController::class, 'shoot']);

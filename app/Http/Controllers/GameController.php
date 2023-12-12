@@ -12,9 +12,9 @@ class GameController extends Controller
         $isMatch = $request->num === $randomNumber;
 
         if ($isMatch) {
-            return response()->json(['message' => 'Validation successful']);
+            return response()->json(['message' => 'Good shot :)']);
         }
 
-        return response()->json(['message' => 'Good shot :)'], 400);
+        return response()->json(['message' => 'Bad shot :('], 400);
     }
 }
